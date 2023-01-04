@@ -1,0 +1,95 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'SF Pro Display regular'; 
+	src: local('SF Pro Display regular'),
+		url(../fonts/SFPRODISPLAYREGULAR.OTF); 
+}
+
+@font-face {
+	font-family: 'SF Pro Display semibold'; 
+	src: local('SF Pro Display semibold'),
+		url(../fonts/SF-Pro-Display-Semibold.otf); 
+}
+
+
+body{
+    font-family: 'SF Pro Display regular', sans-serif;
+}
+
+.header{
+    background: #FA8C16;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.header-wrapper{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav{
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu-link{
+    font-size: 14px;
+    line-height: 22px;
+    color: #FAFAFA;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.input-group{
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding: 5px 12px;
+    overflow: hidden;
+    width: 237px;
+    height: 32px;
+}
+
+.search-input{
+    border: none;
+    height: 100%;
+    width: 80%;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.search-input::placeholder, .search-input::-moz-placeholder, 
+.search-input::-ms-input-placeholder, 
+.search-input::-webkit-input-placeholder{
+    color: #BFBFBF;
+}
+
+.search-button{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
