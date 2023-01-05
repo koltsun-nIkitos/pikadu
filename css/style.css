@@ -16,14 +16,16 @@
 
 
 body{
+    background: #E5E5E5;
     font-family: 'SF Pro Display regular', sans-serif;
 }
 
 .header{
     background: #FA8C16;
-    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+    box-shadow: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 .header-wrapper{
@@ -92,4 +94,116 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.posts{
+    max-width: 800px;
+}
+
+.post{
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 30px;
+}
+
+.post-body{
+    padding: 35px;
+    padding-bottom: 0;
+}
+
+.post-title{
+    margin-top: 0;
+    font-family: 'SF Pro Display semibold';
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.post-text{
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+}
+
+.tags{
+    margin-bottom: 22px;
+}
+
+.tag{
+    color: #BFBFBF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.post-footer{
+    background: #FAFAFA;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.post-button .icon{
+    fill: #8C8C8C;
+}
+
+.post-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.post-button{
+    background-color: transparent;
+    border: none;
+    color: #8C8C8C;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 29px;
+    cursor: pointer;
+}
+
+.counter{
+    margin-left: 7px;
+}
+
+.post-author{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.author-username{
+    display: block;
+    color: #8C8C8C;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.post-time{
+    color: #BFBFBF;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.author-avatar{
+    width: 34px;
+    height: 34px;
+    margin-left: 9px;
+    border-radius: 4px;
 }
