@@ -100,10 +100,13 @@ body{
     max-width: 1200px;
     width: 90%;
     margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .posts{
-    max-width: 800px;
+    width: 67%;
 }
 
 .post{
@@ -206,4 +209,162 @@ body{
     height: 34px;
     margin-left: 9px;
     border-radius: 4px;
+}
+
+.sidebar{
+    width: 31%;
+}
+
+.user{
+    background: #FAFAFA;
+    border: 1px solid #E8E8E8;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.user-avatar{
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.user-name{
+    font-family: 'SF Pro Display semibold';
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.icon-exit{
+    width: 20px;
+    height: 20px;
+    fill: black;
+}
+
+.sidebar-nav{
+    background-color: #fff;
+}
+
+.sidebar-menu{
+    margin: 0;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    border-right: none;
+}
+
+.sidebar-menu-link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    padding: 16px 48px;
+    width: 100%;
+}
+.sidebar-menu-link:hover{
+    background-color: #FFFBE6;
+    border-right: 3px solid#1890FF;
+}
+
+.sidebar-menu-link.active{
+    background-color: #FFFBE6;
+    border-right: 3px solid #FAAD14;;
+}
+
+.button{
+    background: #FAAD14;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px;
+}
+
+.button-new-post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.icon-fire{
+    fill: white;
+    width: 11px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.card{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+}
+
+.card-header{
+    background: #FAFAFA;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 23px 25px;
+}
+
+.card-title{
+    margin: 0 0 10px;
+    font-family: 'SF Pro Display semibold';
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.card-body{
+    padding: 22px 40px 20px 25px;
+}
+
+.card-body-title{
+    margin: 0;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #D48806;
+}
+
+.card-text{
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    margin: 10px 0;
+}
+
+.promo{
+    display: block;
+    background: #fff url('../img/promo.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 260px;
+    border: 1px solid #E8E8E8;
+    margin-top: 20px;
+    position: relative;
+}
+
+.promo::before{
+    content: 'Реклама';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #C4C4C4;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
